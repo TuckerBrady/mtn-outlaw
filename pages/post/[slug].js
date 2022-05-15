@@ -27,7 +27,6 @@ const PostDetails = ({ post }) => {
                 </div>
             </div>
         </div>
-        PostDetails
     </div>
   )
 }
@@ -46,7 +45,7 @@ export async function getStaticProps({ params }) {
       const posts = await getPosts();
 
       return {
-          paths: posts.map(({ node: { slug }}) => ({ params: { slug }})),
+          paths: posts.map(({ node: { slug } } ) => ({ params: { slug } } )),
           fallback: true,
       }
   }

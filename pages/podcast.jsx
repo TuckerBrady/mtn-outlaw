@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { getPosts } from '../services';
-import { FeaturedPosts } from '../sections';
 
 export default function Home({ posts }) {
   return (
@@ -9,7 +8,7 @@ export default function Home({ posts }) {
         <title>MTN Outlaws</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>this is the home page</h1>
+      <h1>this is the Podcast page</h1>
 
     </div>
   )
